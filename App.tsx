@@ -1,15 +1,8 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import Splash from './src/components/Pages/Splash'
-import Money from "./src/assets/Images/money.svg";
+import Splash from './src/Pages/Splash'
 const App = () => {
-  return (
-    <View>
-      <Splash/>
-      <Money/>
-      <Text>App</Text>
-    </View>
-  )
+  return <Splash/>
 }
 
 export default App
