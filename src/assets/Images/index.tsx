@@ -1,3 +1,3 @@
 import Logo from './Logo.svg';
-
-export {Logo};
+import BackButton from './BackButton.svg'
+export {Logo, BackButton};
