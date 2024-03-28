@@ -1,12 +1,22 @@
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
-
+import { BackButton, Logo } from '../../../assets/icon';
 const index = ({
   label,
   backgroundColor = '#02CF8E',
   textColor = '#020202',
   onPress,
+  type,
+  icon
 }) => {
+  if (type === 'icon-only') {
+    return (
+      <TouchableOpacity activeOpacity={0.7} onPress={onPress}>
+        {icon === 'icon-back' && <BackButton />}
+        {icon === 'logo' && <Logo />}
+      </TouchableOpacity>
+    );
+  }
   return (
     <TouchableOpacity
       style={styles.container(backgroundColor)}

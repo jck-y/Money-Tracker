@@ -21,7 +21,7 @@ const SignUp = () => {
 
   return (
     <View style={styles.container}>
-      <PageHeader label="Sign Up" backButton={true} navigation={navigation} nav="SignIn" />
+      <PageHeader label="Sign Up" backButton={true} onPress={() => navigation.goBack()} />
       <Gap height={24} />
       <View style={styles.contentWrapper}>
         <Gap height={26} />
@@ -46,7 +46,7 @@ const SignUp = () => {
         <Gap height={16} />
         <Button
           label="Continue"
-          onPress={() => navigation.navigate('SignUp')}
+          onPress={() => navigation.navigate('Home')}
         />
       </View>
     </View>
